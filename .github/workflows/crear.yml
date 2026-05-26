@@ -34,7 +34,7 @@ jobs:
       run: echo "Simulando el despliegue de la aplicacion"
 
     - name: Construir la imagen de docker
-      run: docker build -t ghcr.io/Ajvera2000/hello-angel:1.0.0 .
+      run: docker build -t ghcr.io/ajvera2000/hello-angel:1.0.0 .
 
     - name: Login a GitHub Container Registry
       run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
