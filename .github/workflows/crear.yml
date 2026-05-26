@@ -40,4 +40,4 @@ jobs:
       run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
     - name: Publicar la imagen
-      run: docker push ghcr.io/Ajvera2000/hello-angel:1.0.0
+      run: docker push ghcr.io/ajvera2000/hello-angel:1.0.0
